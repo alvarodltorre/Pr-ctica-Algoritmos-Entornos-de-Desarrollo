@@ -5,8 +5,8 @@ public abstract class Algoritmos {
 	/**
 	 * Recibe un número entero y devuelve el factorial del numero especificado
 	 * 
-	 * @param numero el numero del que queremos calcular el factorial
-	 * @return el factorial del numero especificado
+	 * @param numero 	el numero del que queremos calcular el factorial
+	 * @return 			el factorial del numero especificado
 	 */
 	public static int factorial(int numero) {
 		int factorial = 1;
@@ -21,8 +21,8 @@ public abstract class Algoritmos {
 	/**
 	 * Recibe un número entero y devuelve true o false en función de si es primo o no.
 	 * 
-	 * @param numero el numero del que queremos saber si es primo o no.
-	 * @return true o false en función de si es primo o no el numero especificado
+	 * @param numero 	el numero del que queremos saber si es primo o no.
+	 * @return 			true o false en función de si es primo o no el numero especificado
 	 */
 	public static boolean esPrimo(int numero) {
 		boolean primo = true;
@@ -34,5 +34,20 @@ public abstract class Algoritmos {
 		}
 		return primo;
 	}
+	
+	
+	/**
+	 * Recibe un número entero y y devuelve el número de fibonacci de dicho número.
+	 * 
+	 * @param numero 	el numero del que queremos calculas su numero fibonacci.
+	 * @return 			el numero fibonacci de nuestro numero especificado.
+	 */
+	public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
 
 }
