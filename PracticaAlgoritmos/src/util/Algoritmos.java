@@ -10,7 +10,7 @@ public abstract class Algoritmos {
 	 */
 	public static int factorial(int numero) {
 		int factorial = 1;
-		for (int i = 1; i < numero; i++) {
+		for (int i = 1; i <= numero; i++) {
 			factorial = factorial * i;
 		}
 		return factorial;
